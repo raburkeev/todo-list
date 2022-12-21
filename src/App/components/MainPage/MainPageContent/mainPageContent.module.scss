@@ -11,7 +11,8 @@
     &_search {
       display: flex;
       align-items: center;
-      max-width: 250px;
+      max-width: 280px;
+      padding-left: 30px;
 
       &_img {
         margin-right: 16px;
@@ -21,13 +22,13 @@
         font-family: inherit;
         border: 1px solid transparent;
         border-radius: 3px;
-        width: 100%;
+        width: 250px;
         font-size: 14px;
         line-height: 18px;
         padding: 3px;
 
         &:focus {
-          border: 1px solid #C4C4C4;
+          //border: 1px solid #C4C4C4;
           border-radius: 3px;
           outline: none;
         }
@@ -36,52 +37,150 @@
   }
 
   &_table {
-    height: 32px;
 
     &_head {
-      line-height: 18px;
 
       &_row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 50px;
+
+        &_check {
+          width: 80px;
+          height: 32px;
+          border-right: 1px solid #C4C4C4;
+        }
+
+        &_description {
+          width: 937px;
+          padding-left: 20px;
+          border-right: 1px solid #C4C4C4;
+        }
+
+        &_status {
+          width: 150px;
+          padding-left: 20px;
+          border-right: 1px solid #C4C4C4;
+        }
+
+        &_date {
+          width: 130px;
+          padding-left: 20px;
+        }
       }
     }
 
-    &_check {
-      width: 80px;
-      height: 32px;
-      border-right: 1px solid #C4C4C4;
+    &_body {
 
-    }
+      &_row {
+        height: 50px;
 
-    &_description {
-      width: 937px;
-      border-right: 1px solid #C4C4C4;
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      padding-left: 20px;
-      height: 32px;
-    }
+        &_check {
+          width: 80px;
+          text-align: center;
+        }
 
-    &_status {
-      width: 151px;
-      border-right: 1px solid #C4C4C4;
-      height: 32px;
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      padding-left: 20px;
-    }
+        &_description {
+          width: 937px;
+          padding-left: 20px;
+        }
 
-    &_date {
-      width: 130px;
-      height: 32px;
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      padding-left: 20px;
+        &_status {
+          width: 150px;
+          padding-left: 20px;
+        }
+
+        &_date {
+          width: 130px;
+          padding-left: 20px;
+        }
+      }
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //&_table {
+  //  display: flex;
+  //  justify-content: flex-start;
+  //  flex-direction: column;
+  //  width: 1300px;
+  //
+  //  &_head {
+  //    line-height: 18px;
+  //    width: 1300px;
+  //
+  //    &_row {
+  //      display: flex;
+  //      justify-content: center;
+  //      align-items: center;
+  //      width: 1300px;
+  //    }
+  //
+  //    &_check {
+  //      width: 80px;
+  //      height: 32px;
+  //      border-right: 1px solid #C4C4C4;
+  //
+  //    }
+  //
+  //    &_description {
+  //      width: 937px;
+  //      border-right: 1px solid #C4C4C4;
+  //      height: 32px;
+  //      display: flex;
+  //      justify-content: left;
+  //      align-items: center;
+  //      margin-left: 20px;
+  //    }
+  //
+  //    &_status {
+  //      width: 151px;
+  //      border-right: 1px solid #C4C4C4;
+  //      height: 32px;
+  //      display: flex;
+  //      justify-content: left;
+  //      align-items: center;
+  //      margin-left: 20px;
+  //    }
+  //
+  //    &_date {
+  //      width: 130px;
+  //      height: 32px;
+  //      display: flex;
+  //      justify-content: left;
+  //      align-items: center;
+  //      padding-left: 20px;
+  //    }
+  //  }
+  //
+  //  &_body {
+  //    line-height: 18px;
+  //
+  //    &_row {
+  //      display: flex;
+  //      justify-content: center;
+  //      align-items: center;
+  //    }
+  //
+  //    &_check {
+  //      width: 80px;
+  //      height: 50px;
+  //    }
+  //  }
+  //
+  //}
 }

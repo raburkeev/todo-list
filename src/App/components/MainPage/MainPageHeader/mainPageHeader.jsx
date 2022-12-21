@@ -5,8 +5,8 @@ import img from '../../../assets/img/header_button.svg'
 const MainPageHeader = () => {
     return (
         <div className={style.header}>
-            <h3 className={style.header_title}>To do list</h3>
-            <img src={img} alt="add_todo_button"/>
+            <h1 className={style.header_title}>To do list</h1>
+            <img className={style.header_button} src={img} alt="add_todo_button"/>
         </div>
     )
 }
